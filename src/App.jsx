@@ -1,11 +1,14 @@
-import { useState } from "react";
+import HeroSection from "./components/HeroSection";
+import Navbar from "./components/Navbar";
 
-import viteLogo from "/vite.svg";
-
-function App() {
-	const [count, setCount] = useState(0);
-
-	return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
-}
-
+const App = () => {
+	return (
+		<>
+			<Navbar />
+			<div className="max-w-7xl mx-auto pt-20 px-6">
+				<HeroSection />
+			</div>
+		</>
+	);
+};
 export default App;
